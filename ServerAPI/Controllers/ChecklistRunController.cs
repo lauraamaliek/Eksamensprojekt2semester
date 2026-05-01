@@ -5,7 +5,7 @@ using ServerAPI.Repositories;
 namespace ServerAPI.Controllers;
 
 [ApiController]
-[Route("api/[controller]")]
+[Route("api/checklistrun")]
 public class ChecklistRunController : ControllerBase
 {
     private readonly ChecklistRunRepository _checklist;
@@ -14,5 +14,11 @@ public class ChecklistRunController : ControllerBase
     public ChecklistRunController(ChecklistRunRepository checklist)
     {
         _checklist = checklist;
+    }
+    
+    [HttpGet]
+    public string GetAll()
+    {
+        return "Det virker!";
     }
 }

@@ -15,4 +15,10 @@ public class TemplatesController : ControllerBase
     {
         _templates = templates;
     }
+    
+    [HttpGet]
+    public string GetAll()
+    {
+        return "Det virker!";
+    }
 }

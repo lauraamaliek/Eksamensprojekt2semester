@@ -1,3 +1,5 @@
+using ServerAPI.Repositories;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -7,6 +9,9 @@ builder.Services.AddControllers();
 builder.Services.AddOpenApi();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+builder.Services.AddScoped<ChecklistRunRepository>();
+builder.Services.AddScoped<TemplatesRepository>();
+builder.Services.AddScoped<UsersRepository>();
 
 var app = builder.Build();
 

@@ -15,4 +15,10 @@ public class UsersController : ControllerBase
     {
         _users = users;
     }
+    
+    [HttpGet]
+    public string GetAll()
+    {
+        return "Det virker!";
+    }
 }
