@@ -1,6 +1,6 @@
 namespace ServerAPI.Repositories;
 
-public class ChecklistRunRepository
+public partial class ChecklistRunRepository
 {
     
 }

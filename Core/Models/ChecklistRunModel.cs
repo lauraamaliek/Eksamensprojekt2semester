@@ -1,6 +1,6 @@
 namespace Core.Models;
 
-public class ChecklistRunModel
+public class ChecklistRun
 {
     
 }
