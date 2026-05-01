@@ -1,6 +1,6 @@
 namespace ServerAPI.Interfaces;
 
-public class IChecklistRunRepository
+public interface IChecklistRunRepository
 {
     
 }

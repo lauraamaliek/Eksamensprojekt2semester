@@ -1,6 +1,6 @@
 namespace ServerAPI.Interfaces;
 
-public class ITemplatesRepository
+public interface ITemplatesRepository
 {
     
 }
