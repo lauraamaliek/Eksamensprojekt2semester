@@ -3,14 +3,14 @@ using MongoDB.Driver;
 
 namespace ServerAPI.Repositories;
 
-public partial class ChecklistRunRepository
+public class UsersRepository
 {
-    private readonly IMongoCollection<ChecklistRun> _checklistRun;
-  
-    public ChecklistRunRepository()
+    private readonly IMongoCollection<UserModel> _user;
+        
+    public UsersRepository()
     {
         var client = new MongoClient("mongodb+srv://nielsdissingrasmussen_db_user:yOakkBrhAsnpGVDg@vestasdb.bbgywjg.mongodb.net/");
         var database = client.GetDatabase("Vestas");
-        _checklistRun = database.GetCollection<ChecklistRun>("ChecklistRun");
+        _user = database.GetCollection<UserModel>("Users");
     }
 }
